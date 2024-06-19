@@ -1,0 +1,13 @@
+$defaultColor: #1ebbc3;
+
+@mixin headingStyle($color:$defaultColor){
+    color:$color;
+    text-align: center;
+}
+
+@for $i from 1 through 6{
+    h#{$i}{
+        @include headingStyle($defaultColor)
+    }
+}
+
